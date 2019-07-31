@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Template</title>
       <link rel='stylesheet'   href='assets/css/style.css' type='text/css' media='all' />
-      <link rel='stylesheet'   href='assets/css/form.css' type='text/css' media='all' />
+      <!-- <link rel='stylesheet'   href='assets/css/form.css' type='text/css' media='all' /> -->
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
       <!-- <link rel="stylesheet" href="assets/css/normalize.css" > -->
       <!-- Add icon library -->
@@ -16,22 +16,22 @@
    <body >
       <!--Top Bar Starts-->
       <section class="container-fluid top_bar"  >
-         <div class="row">
-            <div class="col-xl-11 top_bar_col1 ">&nbsp;</div>
-            <div class="col-xl-1 top_bar_col2" >
-               <div class="flex_style">
-                  <ul class="accessibility">
-                     <li > <a  href="#">A<sub>-</sub></a></li>
-                     <li> <a  href="#">A</a></li>
-                     <li > <a   href="#">A<sub>+</sub></a></li>
-                  </ul>
-                  <!-- <div  class="login" ><a class="text_decorate" href="#">Investor Login</a>  </div>
-                  <div  class="register_investor" ><a class="text_decorate" href="#">Investor Register</a> </div>
-                  <div class="register_department" ><a class="text_decorate" href="#" >Department Login</a> </div> -->
+            <div class="row">
+               <div class="col-xl-7 top_bar_col1 ">&nbsp;</div>
+               <div class="col-xl-5 top_bar_col2" >
+                  <div class="flex_style">
+                     <ul class="accessibility">
+                        <li > <a  href="#">A<sub>-</sub></a></li>
+                        <li> <a  href="#">A</a></li>
+                        <li > <a   href="#">A<sub>+</sub></a></li>
+                     </ul>
+                     <div  class="login" ><a class="text_decorate" href="#">Login</a>  </div>
+                     <div  class="register_investor" ><a class="text_decorate" href="#">Sign Up</a> </div>
+                     <!-- <div class="register_department" ><a class="text_decorate" href="#" >Department Login</a> </div> -->
+                  </div>
                </div>
             </div>
-         </div>
-      </section>
+         </section>
       <!-- Top Bar Ends-->
       <!-- Navigation and Header-->
       <div class="header_logo_megamenu back_pg" >
@@ -565,43 +565,228 @@
          <div class="container-fluid">
             <div class="row">
 
-                  <div class=" col-lg-8 back_pg">
-                     &nbsp;
-                     <!-- Slider With Images Goes Here-->
+                  <div class="col-lg-6 ">
+                     <div class="card-layout">
+                              <!-- Search Box-->
+                             
+                                 
+                         <img src="assets/images/sc.png" style="width: auto; height: auto; padding: 10px; margin-top: 60px; position: relative;"  class="logo_hp"   alt="CHANDIGARH">
+                         <div class="search-box" style="position: absolute; top:1px;">
+                              <input class="search-txt form-control" type="text" name="" placeholder="Type to Search">
+                              <a class="search-btn" href="#"></a>
+                           </div>
+                              
+                       
+                     
+
+                        <!-- Searchbox Ends-->
+
+                     </div>
+
+                        
+                        </div>
+                        
+                        <div class="col-lg-3 ">
+                              <div class="row">
+                           <div class="card-layout"> 
+                                 <img src="assets/images/vector/banner1.svg" style="width: 400px; height: 200px; padding: 5px;"    alt="CHANDIGARH">
+                                 <div >
+                                       <p style="text-align: justify; padding:5px; font-size: 13px; margin: 0;" >A City Equipped with basic infrastructure to  give a decent quality of life, a clean and sustainable environment through applications of some smart solutions.</p>
+                                    </div>
+                                 <div class="ribbon-z-index">
+                                       <p class="ribbon" style="margin: 0;"><strong>What is Smart City?</strong></p>
+                                    </div>
+                           </div>
+
+                           <div class="card-layout" style="margin-top: 20px;"> 
+                                 <div class="card-layout"> 
+                                       <img src="assets/images/vector/banner1.svg" style="width: 400px; height: 200px; padding: 5px;"    alt="CHANDIGARH">
+                                       <div >
+                                             <p style="text-align: justify; padding:5px; font-size: 13px; margin: 0;" >A City Equipped with basic infrastructure to  give a decent quality of life, a clean and sustainable environment through applications of some smart solutions.</p>
+                                          </div>
+                                       <div class="ribbon-z-index">
+                                             <p class="ribbon" style="margin: 0;"><strong>What is Smart City?</strong></p>
+                                          </div>
+                                 </div>
+                           </div>
+                           </div>
+                        </div>
+           
+
+                        <!-- Sign Up -->
+              <div class="col-lg-3 ">
+                  
+               <div class="row" style="margin: 0px;">
+                 <div class="card-layout">
+
+                     <div id="loginbox" style="width: 100%" >                    
+                           <div >
+                                   <div class="panel-heading" style="background-color: #19A2D9">
+                                       <div class="panel-title" style="color: #FFFFFF; background-color:#19A2D9; margin-left: 10px;" >Sign In</div>
+                                       <div style="float:right; font-size: 80%; position: relative; top:-20px"><a href="#" style="color: #FFFFFF; margin-right: 10px;">Forgot password?</a></div>
+                                   </div>     
+               
+                                   <div style="padding: 15px;" class="panel-body" >
+               
+                                       <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                                           
+                                       <form id="loginform" class="form-horizontal" role="form">
+                                                   
+                                           <div style="margin-bottom: 25px" class="input-group">
+                                                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                       <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                                                   </div>
+                                               
+                                           <div style="margin-bottom: 19px" class="input-group">
+                                                       <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                       <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                   </div>
+                                                   
+               
+                                               
+                                           <div class="input-group">
+                                                     <div class="checkbox">
+                                                       <label>
+                                                         <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                                       </label>
+                                                     </div>
+                                                   </div>
+               
+               
+                                               <div  class="form-group">
+                                                   <!-- Button -->
+               
+                                                   <div class="col-sm-12 controls">
+                                                     <a id="btn-login" href="#" class="btn btn-success">Login  </a>
+                                                     <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
+               
+                                                   </div>
+                                               </div>
+               
+               
+                                               <div class="form-group">
+                                                   <div class="col-md-12 control">
+                                                       <div style="border-top: 1px solid#888; padding-top:5px; font-size:85%" >
+                                                           Don't have an account! 
+                                                       <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                                           Sign Up Here
+                                                       </a>
+                                                       </div>
+                                                   </div>
+                                               </div>    
+                                           </form>     
+               
+               
+               
+                                       </div>                     
+                                   </div>  
+                       </div>
+                       <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                                   <div class="panel panel-info">
+                                       <div class="panel-heading">
+                                           <div class="panel-title">Sign Up</div>
+                                           <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                                       </div>  
+                                       <div class="panel-body" >
+                                           <form id="signupform" class="form-horizontal" role="form">
+                                               
+                                               <div id="signupalert" style="display:none" class="alert alert-danger">
+                                                   <p>Error:</p>
+                                                   <span></span>
+                                               </div>
+                                                   
+                                               
+                                                 
+                                               <div class="form-group">
+                                                   <label for="email" class="col-md-3 control-label">Email</label>
+                                                   <div class="col-md-9">
+                                                       <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                                   </div>
+                                               </div>
+                                                   
+                                               <div class="form-group">
+                                                   <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                                   <div class="col-md-9">
+                                                       <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                                   </div>
+                                               </div>
+                                               <div class="form-group">
+                                                   <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                                   <div class="col-md-9">
+                                                       <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                                   </div>
+                                               </div>
+                                               <div class="form-group">
+                                                   <label for="password" class="col-md-3 control-label">Password</label>
+                                                   <div class="col-md-9">
+                                                       <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                                   </div>
+                                               </div>
+                                                   
+                                               <div class="form-group">
+                                                   <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                                                   <div class="col-md-9">
+                                                       <input type="text" class="form-control" name="icode" placeholder="">
+                                                   </div>
+                                               </div>
+               
+                                               <div class="form-group">
+                                                   <!-- Button -->                                        
+                                                   <div class="col-md-offset-3 col-md-9">
+                                                       <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                                       <span style="margin-left:8px;">or</span>  
+                                                   </div>
+                                               </div>
+                                               
+                                               <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                                   
+                                                   <div class="col-md-offset-3 col-md-9">
+                                                       <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+                                                   </div>                                           
+                                                       
+                                               </div>
+                                               
+                                               
+                                               
+                                           </form>
+                                        </div>
+                                   </div>
+               
+                              
+                              
+                               
+                        </div> 
+
+
+
+
+
+                 </div>
+
+                 <div class="card-layout" style="margin-top: 20px; height: 304px;"> 
+                             
+                     Development
+               </div>
                   </div>
 
-              <div class="col-lg-4  back_pg">
-                             <div style="margin-top: -50px;">
-                               <div class="card card-signin my-5">
-                                 <div class="card-body">
-                                   <h5 class="card-title text-center">Sign In</h5>
-                                   <form class="form-signin">
-                                     <div class="form-label-group">
-                                       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                                       <label for="inputEmail">Email address</label>
-                                     </div>
-                       
-                                     <div class="form-label-group">
-                                       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                       <label for="inputPassword">Password</label>
-                                     </div>
-                       
-                                     <div class="custom-control custom-checkbox mb-3">
-                                       <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                       <label class="custom-control-label" for="customCheck1">Remember password</label>
-                                     </div>
-                                     <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                                     <hr class="my-4">
-                                     <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-                                     <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-                                   </form>
-                                 </div>
-                               </div>
-                             </div>
-                           
+
+                 
+               
+                              
+                              
+                               
+                        
+
+
+
+
+
+                
                       
-                      
-                  </div>
+                  </div>  
+                    <!--Sign Up Ends-->
+
+
                <!-- Other Stuff To think Ends--> 
             </div>
          </div>
@@ -794,6 +979,7 @@
       <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
       <!-- <script src="assets/js/popper.min.js"></script> -->
       <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/script.js"></script>
 
       <script>
          /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
